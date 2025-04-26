@@ -1,9 +1,11 @@
-# GAP Range Map Compiler [DRAFT]
+# species-range-compiler
 Combine species occurrence records, expert opinion, and extent of occurrence maps to create range maps.
 
-## Purpose
-The Gap Analysis Project developed range maps for 1,590 terrestrial vertebrate species by attributing a natural grid of spatial units (12 digit hydrologic unit code (HUC) vector data layer) with each species' status regarding known presence, seasonal presence, use for reproduction, and origin (i.e., is it native?).  
+This repo is works in tandem with wildlife-wrangler.
 
+# STATUS - EARLY DRAFT - generalizing GAP-ranges
+
+## Purpose
 The abundance of wildlife occurrence datasets that are currently accessible represent an opportunity to update some features of the GAP range data.  However, this task is more complex than it may seem at first consideration given errors and uncertainties in occurrence data and the lack of absence records.
 
 ## Framework
@@ -12,7 +14,7 @@ The wildlife-wrangler code creates databases of species occurrence records that 
 ## Steps
 1. Identify the taxon concept of interest, as well as any associated taxon concepts from the time
 period of interest. 
-    a. P:/Proj3/USGap/Vert/DBase/taxa_map.sqlite
+    a. REPLACETHIS/Vert/DBase/taxa_map.sqlite
 
 2. Acquire and curate occurrence records for all relevant taxa with wildlife-wrangler.
     a. Copy and use wildlife-wrangler/Query_TEMPLATE.ipynb
@@ -21,7 +23,7 @@ period of interest.
     a. Copy and modify ./xXXXXx0-weighting_TEMPLATE.py
 
 4. Set range compilation parameters
-    a. P:/Proj3/USGap/Vert/DBase/range-parameters.sqlite
+    a. REPLACETHIS/Vert/DBase/range-parameters.sqlite
 
 5. Compile the range 
     a. Edit and run ./GAP-range-compiler.py
@@ -39,7 +41,7 @@ period of interest.
     a. ./QGISTools/load range.py
 
 9. Edit by recording your opinion in QGIS
-    a. ./QGISTools/register_opinion.py (inserts into P:/Proj3/USGap/Vert/DBase/range_opinions.sqlite)
+    a. ./QGISTools/register_opinion.py (inserts into REPLACETHIS/Vert/DBase/range_opinions.sqlite)
     b. readjust occurrence records weights.
 
 10. Repeat steps 4 through 9 as necessary.
