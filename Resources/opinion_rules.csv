@@ -1,0 +1,13 @@
+﻿Case ID,Conflict,Resolution
+1,Opinions A and B have same expert but B has more recent entry_time,More recent entry_time wins
+2,Opinions A and B have different expert rank,Higher expert_rank wins
+3,"Opinions A and B have different confidences, expert_ranks are identical",Higher confidence wins
+4,Opinions A and B have different confidences and expert_ranks,"Higher rank wins, another approach would be a rank-confidence score =  rank * (confidence/10)  and higher score wins; if tie, higher rank wins"
+5,"Opinions A and B have equal expert rank and rank-confidence scores, but disagree",No winner; null is used.
+6,Opinions A and B conflict and are from different years within the timer period of interest,The newer record wins.
+7,,
+8,,
+9,,
+,Non conflicting opinions from within the same time period,
+,Lopsided confilcts when lots of opinions.  ,
+,Number of experts concuring,
